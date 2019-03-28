@@ -16,7 +16,10 @@ claim
               , .Patterns )
         )
 
+strategy search-bound(2)
+/*
 strategy simplify ; kt(find-list-seg) ; simplify 
        ; ( direct-proof
          | right-unfold-Nth(0,1) 
          )
+*/

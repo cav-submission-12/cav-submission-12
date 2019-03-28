@@ -35,11 +35,11 @@ claim \implies( \and( dllSegmentRightLength (
                      , .Patterns
                      )
               )
-
+strategy search-bound(3)
+/*
 strategy simplify ; kt ; simplify
       ; ( direct-proof
         | right-unfold-Nth(0,1) ; simplify ; direct-proof
         | noop
         )
-
-
+*/

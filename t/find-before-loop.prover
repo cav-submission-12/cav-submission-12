@@ -18,5 +18,7 @@ claim \implies( \and( find-list( variable("H0") { ArrayIntInt }
                     , \not(isMember(variable("DATA") { Int } , variable("F1") { Set }))
                     , .Patterns )
               )
-strategy right-unfold-Nth(0,0) ; direct-proof
+
+strategy search-bound(2)
+// strategy right-unfold-Nth(0,0) ; direct-proof
 

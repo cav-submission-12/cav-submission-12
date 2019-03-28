@@ -36,3 +36,31 @@ and so we specify the strategy to reduce the search space.
 The `t/lsegright-list-implies-list` test needs some help in instantiating
 existential variables, which is done by specifying a strategy as a substitution.
 
+Timings
+-------
+
+Times as reported by the `time` command. Entries marked with `*` do not peform a search
+
+|   | time (real)|  Test name                                                                             |
+|---|------------|----------------------------------------------------------------------------------------|
+|   | 0m7.129s   | t/emptyset-implies-isempty.prover                                                      |
+|   | 0m10.681s  | t/lsegleft-implies-lsegright.prover                                                    |
+|   | 0m10.824s  | t/lsegleft-implies-list.prover                                                         |
+|   | 0m9.447s   | t/sortedlist-implies-list.prover                                                       |
+|   | 0m9.900s   | t/listSortedLength-implies-listLength.prover                                           |
+|   | 0m29.872s  | t/lsegleftsorted-sortedlist-implies-sortedlist.prover                                  |
+|   | 0m34.251s  | t/listSegmentRightLength-listSegmentRightLength-implies-listSegmentRightLength.prover  |
+|   | 0m8.035s   | t/listSegmentRightLength-appendone-implies-listSegmentRightLength.prover               |
+|   | 0m11.871s  | t/lsegright-implies-lsegleft.prover                                                    |
+|   | 0m9.479s   | t/listSortedLength-implies-listSorted.prover                                           |
+|   | 0m28.582s  | t/dllSegmentLeft-dll-implies-dll.prover                                                |
+|   | 0m10.710s  | t/dllSegmentLeftLength-dllLength-implies-dllLength.prover                              |
+|   | 0m11.358s  | t/dllSegmentRightLength-dllSegmentRightLength-implies-dllSegmentRightLength.prover     |
+|   | 0m29.885s  | t/bst-implies-bt.prover                                                                |
+|   | 0m37.980s  | t/avl-implies-bst.prover                                                               |
+|   | 0m7.674s   | t/find-before-loop.prover                                                              |
+|   | 0m24.454s  | t/find-in-loop.prover                                                                  |
+|   | 0m7.563s   | t/sum-to-n.prover                                                                      |
+| * | 0m7.791s   | t/lsegright-list-implies-list.prover                                                   |
+| * | 0m6.913s   | t/LTL-Ind.prover                                                                       |
+| * | 0m8.836s   | t/zip-zeros-ones-implies-alters.prover                                                 |
